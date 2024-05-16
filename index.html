@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+     <meta charset="utf-8">
+     <title>Ora di Roma - Ora Ufficiale dell'Italia</title>
+   <link rel="icon" href="clock.png" type="image/png">
+
+     <meta name="description" content="Aggiorna il tuo orologio con l'orario di Roma, l'ora ufficiale dell'Italia">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script>var doc=window.document,docRoot=doc.documentElement;docRoot.className="js";var HOMEURL="https://www.oradidiroma.it",BASEURL="",XHR=0,isIE=0,SHC="2l7l5l24l16l25l20",ajc=[1715109920,432000,5,3,0.3,1,35,14,14],HB=[0,0,0,84,137,0,'/e/1',0,0,1094,0,'/a/1',0,0,'/static/css','/static/js',0],hb11=35,hb13=0,hb14=30,hb15=1,hb16=7,hb17=0,hb18=2,hb19=900,hb20=10,hb21=5,hb22=0,hb23=5,hb24=0,hb25=1,hb26=1,hb27=0,hb28=1,hb29=2,hb30=0,hb32=1020,hb33=660;</script>
+     <link rel="stylesheet" href="/static/css/e/1/137/137-221.css" type="text/css">
+     <script src="/static/js/a/1/1094/1094-1178.js"></script>
+	 <meta property="og:title" content="Aggiorna il tuo orologio con l'orario di Roma, l'ora ufficiale dell'Italia">
+     <meta property="og:description" content="Aggiorna il tuo orologio con l'orario di Roma, l'ora ufficiale dell'Italia">
+     <meta property="og:image" content="https://c2.staticflickr.com/6/5323/29723468823_c3f268a177_o.png">
+     <meta property="og:url" content="https://www.oradidiroma.it/">
+     <meta property="og:type" content="website">
+     <meta property="og:locale" content="it_IT">
+     <meta property="fb:app_id" content="705813939494643">
+	 <meta name="google-site-verification" content="tow1f4kACfH65GMv2-Cj32pv9tM2UySPvcifqefmbGg">
+     <meta name="language" content="it_IT">
+     <link rel="alternate" hreflang="it_IT" href="https://www.oradidiroma.it/">
+     <link rel="canonical" href="https://www.oradidiroma.it/">
+     <!-- Desktop -->
+     <link rel="icon" href="/favicon.ico" sizes="any">
+     <link rel="icon" href="/favicon.png" type="image/png">
+     <link rel="icon" href="/static/icon/favicon-16x16.png" type="image/png" sizes="16x16">
+     <link rel="icon" href="/static/icon/favicon-32x32.png" type="image/png" sizes="32x32">
+     <!-- Mobile -->
+     <!-- Windows -->
+     <meta name="msapplication-config" content="/browserconfig.xml">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="/static/icon/mstile-144x144.png">
+     <!-- All -->
+     <meta name="application-name" content="Ora Esatta">
+     <meta name="theme-color" content="#ffffff">
+     <link rel="manifest" href="/site.webmanifest">
+    <style>
+a,body,div,h1,h2,h3,html,iframe,img,p,span,strong {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    white-space: normal;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+}
+
+h1,h2,h3 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+body {
+    color: #000;
+    background-color: #fff;
+    font-family: Arial, Helvetica, Helmet, FreeSans, Clean, sans-serif;
+    line-height: 1;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+a:focus, a:hover {
+    text-decoration: underline;
+}
+
+.end, .ignore {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width: 1px;
+    height: 1px;
+    border-width: 0;
+    left: -100000px;
+    top: -100000px;
+}
+
+#aaa {
+    overflow: hidden;
+    min-height: 0;
+    width: 100%;
+}
+
+html {
+    overflow: auto;
+}
+
+#wrap {
+    width: 100%;
+}
+
+#relogio, #time, body {
+    background-color: #e6e6e6;
+}
+
+#content, #footer, #header, #main, #wrapper {
+    margin: 0 auto;
+}
+
+#content, #footer, #header, #main {
+    background-color: #fff;
+    width: 90%;
+}
+
+#wrapper {
+    width: 760px;
+    padding: 3% 0;
+}
+
+#main, #relogio, #time {
+    border: 1px solid silver;
+}
+
+#main {
+    width: auto;
+    text-align: center;
+}
+
+#relogio, #time, h1, h3 {
+    color: #222;
+}
+
+#header {
+    border-bottom: 1px solid silver;
+    padding: 10px 0 6px;
+}
+
+h1, h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 400%;
+    letter-spacing: -2px;
+    padding-bottom: .2em;
+}
+
+#automatico, #footer p, h2 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+:first-child + html h3 {
+    letter-spacing: -1px;
+}
+
+* html h1 {
+    letter-spacing: -1px;
+}
+
+#relogio, #time, #wrapper, body, h1, h2, h3, h6, p {
+    text-align: center;
+}
+
+#relogio, #time {
+    font-size: 15em;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+#footer {
+    border-top: 1px solid silver;
+    margin-top: 0;
+    padding: 15px 0 25px 0;
+}
+
+#footer p img {
+    margin-right: 2px;
+}
+
+.alteracao, .aviso {
+    background-color: #ff0;
+    border: 1px solid #000;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    padding: 5px 10px 6px;
+    text-align: left;
+}
+
+.aviso, .aviso a {
+    color: #333;
+}
+
+.aviso span {
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 2px;
+    text-transform: uppercase;
+}
+
+#relogio, #time, .texto, h3 {
+    margin-top: 20px;
+}
+
+#automatico {
+    margin: 25px 0 50px;
+    color: red;
+}
+
+#automatico a {
+    color: red;
+    font-weight: 700;
+}
+
+#automatico span {
+    color: #666;
+}
+
+.texto {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+p.doe {
+    padding: 0 0 30px;
+}
+
+p.doe .chave-pix {
+    line-height: 2.5;
+}
+
+p.doe #pix {
+    font-weight: 700;
+    font-size: 107.143%;
+}
+
+.js #automatico {
+    color: #666;
+}
+
+@media all and (min-width: 10px) {
+    #wrapper {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 210%;
+        padding-bottom: .25em;
+        letter-spacing: -1px;
+    }
+
+    #dia-topo {
+        font-size: 1.3em;
+        letter-spacing: -.3px;
+    }
+
+    #footer p {
+        margin-bottom: 5px;
+    }
+
+    #header h2 {
+        display: none;
+    }
+}
+
+@media all and (min-width: 100px) {
+    #relogio {
+        font-size: 4em;
+    }
+}
+
+@media all and (min-width: 249px) {
+    #relogio {
+        font-size: 4.791em;
+    }
+}
+
+@media all and (min-width: 299px) {
+    #relogio {
+        font-size: 5.75em;
+    }
+
+    #dia-topo {
+        font-size: 1.35em;
+        letter-spacing: -.3px;
+    }
+}
+
+@media all and (min-width: 319px) {
+    h1 {
+        font-size: 231.11%;
+        letter-spacing: -.7px;
+    }
+
+    #dia-topo {
+        font-size: 1.45em;
+        letter-spacing: -.2px;
+    }
+
+    #relogio {
+        font-size: 5.9em;
+    }
+
+    #header h2 {
+        display: block;
+    }
+}
+
+@media all and (min-width: 359px) {
+    h1 {
+        font-size: 260%;
+        letter-spacing: -1px;
+    }
+
+    #dia-topo {
+        font-size: 1.65em;
+        letter-spacing: -.3px;
+    }
+
+    #relogio {
+        font-size: 6.9em;
+    }
+
+    p.doe {
+        padding: 0 4px 30px;
+    }
+}
+
+@media all and (min-width: 374px) {
+    h1 {
+        font-size: 270.83%;
+    }
+
+    #dia-topo {
+        font-size: 1.69em;
+    }
+
+    #relogio {
+        font-size: 7.1875em;
+    }
+
+    p.doe {
+        padding: 0 10.2px 30px;
+    }
+}
+
+@media all and (min-width: 383px) {
+    h1 {
+        font-size: 277.33%;
+    }
+
+    #dia-topo {
+        font-size: 1.72em;
+    }
+
+    #relogio {
+        font-size: 7.36em;
+    }
+
+    p.doe {
+        padding: 0 0 30px;
+    }
+}
+
+@media all and (min-width: 389px) {
+    h1 {
+        font-size: 281.66%;
+        padding-bottom: .29em;
+    }
+
+    #dia-topo {
+        font-size: 1.735em;
+        letter-spacing: -.4px;
+    }
+
+    #relogio {
+        font-size: 7.475em;
+    }
+
+    p.doe {
+        padding: 0 2px 30px;
+    }
+}
+
+@media all and (min-width: 400px) {
+    h1 {
+        font-size: 288.88%;
+    }
+
+    #dia-topo {
+        font-size: 1.74em;
+    }
+
+    #relogio {
+        font-size: 7.666em;
+    }
+
+    p.doe {
+        padding: 0 0 30px;
+    }
+}
+
+@media all and (min-width: 411px) {
+    h1 {
+        font-size: 297.55%;
+        letter-spacing: -1.3px;
+    }
+
+    #dia-topo {
+        font-size: 1.755em;
+    }
+
+    #relogio {
+        font-size: 7.896em;
+    }
+
+    p.doe {
+        padding: 0 5.5px 30px;
+    }
+}
+
+@media all and (min-width: 414px) {
+    p.doe {
+        padding: 0 6px 30px;
+    }
+}
+
+@media all and (min-width: 424px) {
+    h1 {
+        font-size: 306.94%;
+    }
+
+    #dia-topo {
+        font-size: 1.78em;
+    }
+
+    #relogio {
+        font-size: 8.145em;
+    }
+
+    p.doe {
+        padding: 0 12.5px 30px;
+    }
+}
+
+@media all and (min-width: 480px) {
+    h1 {
+        font-size: 347.38%;
+        letter-spacing: -1.7px;
+    }
+
+    #dia-topo {
+        font-size: 2em;
+        letter-spacing: -.5px;
+    }
+
+    #relogio {
+        font-size: 9.2em;
+    }
+
+    p.doe {
+        padding: 0 0 30px;
+    }
+}
+
+@media all and (max-width: 520px) {
+    #main {
+        border-radius: 10px;
+    }
+
+    p.doe #pix {
+        font-size: 114.286%;
+        letter-spacing: .3px;
+    }
+}
+
+@media all and (min-width: 520px) {
+    #relogio {
+        font-size: 9.966em;
+    }
+}
+
+@media all and (min-width: 620px) {
+    #dia-topo {
+        font-size: 2.25em;
+        letter-spacing: -.6px;
+    }
+
+    #relogio {
+        font-size: 11.5em;
+    }
+}
+
+@media all and (min-width: 767px) {
+    h1 {
+        font-size: 400%;
+        letter-spacing: -2px;
+        padding-bottom: .2em;
+    }
+
+    #dia-topo {
+        font-size: 2.5em;
+        letter-spacing: -.7px;
+    }
+
+    #relogio {
+        font-size: 14.72em;
+    }
+
+    #footer p {
+        margin-bottom: auto;
+    }
+
+    p.doe {
+        padding: 0 12px 30px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    #wrapper {
+        width: 760px;
+        padding: 2.5em 0;
+    }
+
+    #relogio {
+        font-size: 15.33em;
+    }
+
+    p.doe {
+        padding: 0 25px 30px;
+    }
+}
+
+@media all and (min-width: 950px) {
+    #wrapper {
+        width: 850px;
+    }
+
+    #dia-topo {
+        font-size: 2.6em;
+        letter-spacing: -.85px;
+    }
+
+    #relogio {
+        font-size: 17em;
+        line-height: 120%;
+    }
+
+    p.doe {
+        padding: 0 0 30px;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    #wrapper {
+        width: 950px;
+    }
+
+    #relogio {
+        font-size: 18em;
+    }
+}
+
+@media all and (min-width: 1300px) {
+    #wrapper {
+        width: 1000px;
+    }
+
+    #dia-topo {
+        font-size: 2.8em;
+        letter-spacing: -1px;
+    }
+
+    #relogio {
+        font-size: 19em;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    #wrapper {
+        width: 1050px;
+    }
+
+    #relogio {
+        font-size: 20em;
+    }
+}
+
+.br-mb {
+    display: none;
+}
+
+.span-mb {
+    display: inline;
+}
+
+@media only screen and (max-width: 750px) {
+    .br-mb {
+        display: inline;
+    }
+
+    .span-mb {
+        display: none;
+    }
+}
+
+.verao {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 30px;
+}
+
+.verao a {
+    color: navy;
+}
+
+#header div {
+    text-align: center;
+    font-size: 140%;
+    padding-top: 5px;
+}
+
+#automatico {
+    padding: 20px 0 60px;
+    margin: 0;
+}
+
+#footer {
+    padding: 20px 0 40px;
+}
+
+#footer2 {
+    border-top: 1px solid silver;
+    padding-top: 15px;
+}
+
+@media all and (max-width: 400px) {
+    .break8 {
+        display: none;
+    }
+
+    #dia-rodape {
+        display: block;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+}
+     </style>
+</head>
+<div >
+<div id="wrapper">
+     <div id="main">
+          <div id="header">
+               <h1>Ora di Roma</h1>
+               <h2>Aggiorna il tuo orologio con l'orario di Roma, l'ora ufficiale dell'Italia</h2>
+               
+          </div>
+          <div id="content">
+               <h3 id="dia-topo">Martedì, 7 Maggio 2024</h3>
+               <p id="relogio"></p><!-- <<< AVVISO: NON USARE QUEST'ORARIO IN APPLICAZIONI, L'ACCESSO POTREBBE ESSERE BLOCCATO E L'APPLICAZIONE POTREBBE SMETTERE DI FUNZIONARE -->
+			   <p id="automatico">Abilita JavaScript nel browser per aggiornare automaticamente l'orario. <br />Oppure <a href="/" title="Aggiorna l'ora">clicca qui</a> per aggiornare l'ora esatta.</p>
+               <script>doc.getElementById("automatico").innerHTML="L'ora esatta è sincronizzata automaticamente. Non è necessario ricaricare la pagina.";//var textShare='';</script>
+          </div>
+          <div id="footer">
+               <script>
+    var s_width = screen.width;
+    var s_padding = "20px 0 50px";
+    if (s_width < 600) {
+        s_padding = "20px 0 30px";
+    } else if (s_width < 800) {
+        s_padding = "20px 0 35px";
+    } else if (s_width < 1000) {
+        s_padding = "20px 0 40px";
+    }
+    document.getElementById("automatico").style.padding = s_padding;
+    document.write('<p class="doe">Fai una DONAZIONE tramite IBAN di qualsiasi importo e aiuta a mantenere questo sito libero da fastidiose pubblicità. Il sito dell\'ora esatta ha bisogno di server ad alta capacità di elaborazione per evitare sovraccarichi di sistema.<br><span class="chave-pix">IBAN: IT39Z3608105138266215566224 Causale: Donazione</span></p>');
+</script>
+
+               <div id="footer2">
+                    <p><noscript>
+                    </noscript><img src="italy.png" alt="Bandiera italiana" title="Bandiera italiana" width="15" height="10" style="margin-bottom: 0;"> Italia - Central European Time (CET) - Ora di Roma, l'ora ufficiale dell'Italia<span class="break8">  </span><span id="dia-rodape"></span></p>
+                    <p>© 2024 • OraDiRoma.it<br class="br-mb"><span class="span-mb"> • <a id="contato" href="/contato.html" target="_blank" title="Contatto" rel="nofollow">Contatto</a></p>
+               </div>
+		  </div>
+     </div>
+</div>
+<div class="end">
+     <script src="/static/js/i/1/1227/1227-1311.js"></script>
+     <script async src="/static/js/j/1/1080/1080-1164.js"></script>
+     <div id="analytics">
+	 <script>// Ottieni l'elemento del paragrafo con l'ID "relogio"
+var orologioElement = document.getElementById("relogio");
+
+// Funzione per ottenere l'ora corrente nel formato HH:MM:SS
+function getTime() {
+    var dataAttuale = new Date();
+    var ore = dataAttuale.getHours();
+    var minuti = dataAttuale.getMinutes();
+    var secondi = dataAttuale.getSeconds();
+    // Aggiungi uno zero davanti ai numeri inferiori a 10
+    ore = ore < 10 ? "0" + ore : ore;
+    minuti = minuti < 10 ? "0" + minuti : minuti;
+    secondi = secondi < 10 ? "0" + secondi : secondi;
+    return ore + ":" + minuti + ":" + secondi;
+}
+
+// Aggiorna l'orologio ogni secondo
+function updateClock() {
+    orologioElement.innerHTML = getTime();
+}
+
+// Esegui la funzione di aggiornamento iniziale e imposta l'intervallo di aggiornamento
+updateClock();
+setInterval(updateClock, 1000); // Aggiorna ogni secondo
+    // Obtém a data atual
+    var dataAtual = new Date();
+
+    // Obtém o elemento h3 pelo ID
+    var elementoData = document.getElementById("dia-topo");
+
+    // Formata a data
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var dataFormatada = dataAtual.toLocaleDateString('it-IT', options);
+
+    // Atualiza o conteúdo do elemento h3 com a data formatada
+    elementoData.innerHTML = dataFormatada;
+	 </script>
+
+     </div>
+</div>
+</body>
+</html>
